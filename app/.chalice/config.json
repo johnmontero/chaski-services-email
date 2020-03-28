@@ -1,0 +1,31 @@
+{
+  "version": "2.0",
+  "app_name": "chaski-services-email",
+  "lambda_timeout": 900,
+  "environment_variables": {
+    "DEBUG": "True"
+  },
+  "stages": {
+    "local": {
+      "api_gateway_stage": "api",
+      "autogen_policy": false,
+      "environment_variables": {
+        "TABLE_NAME_MESSAGE": "chazki-table-message"
+      }
+    },
+    "dev": {
+      "api_gateway_stage": "api",
+      "autogen_policy": false,
+      "environment_variables": {
+        "TABLE_NAME_MESSAGE": "chazki-table-message"
+      }
+    },
+    "prod": {
+      "api_gateway_stage": "api",
+      "autogen_policy": false,
+      "environment_variables": {
+        "TABLE_NAME_MESSAGE": "chazki-table-message"
+      }
+    }
+  }
+}
