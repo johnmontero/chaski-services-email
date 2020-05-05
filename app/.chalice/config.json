@@ -20,6 +20,13 @@
         "TABLE_NAME_MESSAGE": "chazki-table-message"
       }
     },
+    "pre": {
+      "api_gateway_stage": "api",
+      "autogen_policy": false,
+      "environment_variables": {
+        "TABLE_NAME_MESSAGE": "chazki-table-message"
+      }
+    },
     "prod": {
       "api_gateway_stage": "api",
       "autogen_policy": false,
